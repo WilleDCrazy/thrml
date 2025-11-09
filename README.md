@@ -51,6 +51,28 @@ If you use THRML in your research, please cite us!
 }
 ```
 
+## 🚀 Quick Start: MNIST Diffusion Demo
+
+Want to see THRML in action? Run our complete working demo that trains a diffusion-like model on MNIST and generates digits from pure noise!
+
+```bash
+# Easy setup (one command!)
+bash setup_demo.sh
+
+# Run the demo
+source venv/bin/activate
+python demo_mnist_diffusion.py --digit 1 --epochs 3
+```
+
+This will:
+1. ✅ Train an energy-based model on MNIST digits
+2. ✅ Generate a specific digit (0-9) from random noise using THRML's Gibbs sampling
+3. ✅ Create visualizations showing the generation process step-by-step
+
+**Output**: Two images showing the generation from noise → digit!
+
+📖 **Full instructions**: See [DEMO_README.md](DEMO_README.md)
+
 ## Quick example
 
 Sampling a small Ising chain with two-color block Gibbs:
